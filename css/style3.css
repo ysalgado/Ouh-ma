@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+
+.fondo{
+background-image: url(../img/fondo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 100%;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*index*/
+
+.menu{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-menu{
+    font-size: 15rem;
+    text-align: center;
+}
+
+.ul-link{
+    list-style: none;
+}
+
+nav div ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav div ul li a{
+    text-decoration: none;
+    color: #d8d1a1;
+    font-size: 2.8rem;
+}
+
+main section{
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    margin-bottom: 2.5%;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2.6rem;
+}
+
+.section-p{
+    margin: 20px 70px;
+    text-align: center;
+}
+
+.Color-text{
+    color:  #d8d1a1;
+    
+}
+
+.fuente{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #d8d1a1;
+}
+
+.text-p{
+    text-align: center;
+    margin-top: 2%;
+}
+
+footer ul{
+    margin: 1%;
+    padding: 1%;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 600%;
+    color:#d8d1a1  
+}
+
+.fa-brands{
+    margin: .5em;
+    color:#dbca5d
+}
+
+.header{
+    width: 60%;
+    display: flex;
+    justify-content: left;
+}
+
+.img-center{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.index-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "nav nav"
+    "logo imagen"
+    "main main"
+    "footer footer";
+    overflow: hidden;
+}
+
+#nav{
+    grid-area: nav;
+    justify-content: right;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#imagen{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+@media (max-width: 320px){
+    .index-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 10vh 20vh 40vh 10vh;
+        
+}
+}
+/*artistas*/
+
+.img-element9{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    height: 300px;
+    width: auto;
+}
+
+.trayect{
+    padding: 20px 0px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width: auto;
+}
+
+#artistas h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 4%;
+    padding: 1%;
+    background-color: black;
+    width: auto;
+}
+
+#artistas .trayect{
+    margin: 1%;
+    padding: 3% 0;
+    display: flex;
+}
+
+#artistas .trayect figure{
+    margin: 20px;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+#artistas .trayect figure img{
+    height: 300px; 
+    width: auto;
+    border-radius: 5px;
+}
+
+#artistas .trayect figure figcaption{
+    font-size: 3.2rem;
+}
+
+.format-p{
+    font-size: 2rem;
+}
+
+/*musica*/
+
+#musica section div{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 20px 0px;
+}
+
+#musica .music{
+    margin: 2% 20%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+#musica .music div{
+    height: 30%;
+    width: 100%;
+    padding: 80px 0;
+    margin: 2% 0;
+    background-color: black;
+}
+
+#musica .music div img{
+    width: 25%;
+}
+
+#musica h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1% 0;
+    margin: 4% 0;
+    background-color: black;
+    width: auto;
+}
+
+/*novedades*/
+
+#novedades{
+    margin: 0%;
+    padding: 0% ;
+    display: flex;
+    }
+
+#novedades section{
+    margin: 4% 3%;
+    padding: 4% 3;
+    justify-content:space-between;
+}
+
+#novedades h2{
+    margin: 1%;
+    padding: 1%;
+    font-size: 3.3rem;
+    text-transform:capitalize;
+}
+
+
+.format-columns{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.8rem;
+    line-height: 3.8rem; 
+    width: 100%;
+}
+
+
+#novedades section div img{
+    width: 100%;
+    margin: 1%;
+    padding: 0%;
+}
+
+/*contacto*/
+
+/*SMALL SCREEM*/
+
+#contacto{
+    box-sizing: border-box;
+    margin: 5% 15%;
+    padding: 2%;
+}
+
+.content{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+h5,
+.content ul li{
+    font-family: 'Quicksand', sans-serif;
+    font-size: .7em;
+    text-transform: capitalize;
+}
+
+/* espacio entre iconos y texto
+.fa-solid{
+    margin-left: 2%;
+}*/
+
+.box{
+    box-shadow: 0 0 20px 0 #d8d1a1;
+}
+
+.content form label{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.contact-form{
+    margin: 0%;
+    padding: 3em;
+    background: rgb(31, 29, 29);
+}
+
+.contact-form form input,
+.contact-form form button,
+.contact-form form textarea{
+    width: 100%;
+    padding: .5em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #d8d1a1;
+    border-bottom: 1px solid #dbca5d;
+}
+
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20%;
+    grid-template-areas: 
+    "name last-name"
+    "phone email"
+    "mensaje mensaje"
+    "button button";
+}
+
+#name{
+    grid-area: name;
+}
+
+#last-name{
+    grid-area: last-name;
+}
+
+#phone{
+    grid-area: phone;
+}
+
+#email{
+    grid-area: email;
+}
+
+#mensaje{
+    grid-area: mensaje;
+}
+
+#button{
+    grid-area: button;
+}
+
+.contact-form form button{
+    background-color: #dbca5d;
+    color: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    font-weight: bold;
+    margin-top: 3.5em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background: #d8d1a1;
+    transition: backgraound-color .7s ease-out;
+    outline: 0;
+}
+
+.contact-info{
+    background-color: black;
+    width: auto; 
+    text-align: center;
+    padding: 0 0 1em 0;
+}
+
+.contact-info ul{
+    list-style: none;
+}
+
+.contact-info{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.8em;
+    padding: 10% 5%;
+    margin: 2%;
+}
+
+.space-p{
+    margin-top: 20%;
+}
+
+.space{
+    margin-top: 60%;
+}
+
+/*MEDIUM SCREEM*/
+
+@media (min-width: 900px){
+    body{
+        padding: 0 4 rem;
+    }
+
+.box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;  
+}
+}
