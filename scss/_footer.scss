@@ -1,0 +1,33 @@
+#footer{
+    h3{
+        font-size: $textXs;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        text-decoration: none;
+        font-size: 600%;
+        margin-top: 2%;
+        color: $color1      
+    }
+    .fa-brands{
+        font-size: 2rem;
+        margin: .5em;
+        color: $color3;
+        transition: all .4s ease-in-out;
+        background-color: none;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+@media (min-width: 1024px){
+    #footer{
+        h3{
+            margin-top: 3%;
+        }
+}
+}

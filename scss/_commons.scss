@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 62.5%;
+    font-family: $font1;
+    color: $color1;
+}
+.fondo{
+    background-color: $bgGeneral;
+    background-position: auto;
+    }
+#main{
+    font-family: $font1;
+    font-size: $textSm;
+    line-height: $lineHeightSm;
+    text-align: center;
+    color: $color1;
+    height: 60vh;
+    h1{
+        font-size: $textSm;
+        text-align: center;
+        margin-top: 5%;
+    }
+    section p{
+        margin: 5% 15% 0 15%;
+    }
+}
+@media (min-width: 768px){
+    #main{
+        font-size: $textLg;
+        height: 22vh;
+        section p{
+            margin-top: 3%;
+        }
+    }
+}
+@media (min-width: 1024px){
+    #main{
+        font-size: $textXl;
+        line-height: $lineHeightMd;
+        h1{
+            font-size: $textMd;
+            margin-top: 3%;
+        }
+        section p{
+            margin: 2% 15% 0 15%;
+        }
+}
+}

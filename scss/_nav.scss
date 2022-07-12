@@ -1,0 +1,22 @@
+.container-fluid{
+    .logo{
+        width: 40%;
+        margin: 0;
+        padding: 1% 0;
+            &:hover{
+            transform: scale(1.1);
+            transition: all .4s ease-in-out;
+            }
+        }
+    .navbar-brand{
+        width: 70%;
+        .navbar-nav .nav-item .nav-link{
+        color: $color1;
+            &:hover{
+        color: $colorWhite;
+        transition: backgraound-color .7s ease-out;
+        outline: 0;
+            }   
+        }
+    }
+}
