@@ -15,13 +15,13 @@
     line-height: $lineHeightSm;
     text-align: center;
     color: $color1;
-    height: 60vh;
+    height: 40vh;
     h1{
         font-size: $textSm;
         text-align: center;
         margin-top: 5%;
     }
-    section p{
+    p{
         margin: 5% 15% 0 15%;
     }
 }
@@ -45,5 +45,5 @@
         section p{
             margin: 2% 15% 0 15%;
         }
-}
+    }
 }

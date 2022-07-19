@@ -12,16 +12,16 @@
 
 #main {
   font-family: "Quicksand", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.2rem;
   text-align: center;
   color: #d8d1a1;
-  height: 60vh; }
+  height: 40vh; }
   #main h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-top: 5%; }
-  #main section p {
+  #main p {
     margin: 5% 15% 0 15%; }
 
 @media (min-width: 768px) {
@@ -41,9 +41,12 @@
     #main section p {
       margin: 2% 15% 0 15%; } }
 
+.container-fluid .navbar-toggler-icon {
+  background-color: url "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28216, 209, 161,' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"; }
+
 .container-fluid .logo {
-  width: 40%;
-  margin: 0;
+  width: 50%;
+  margin-left: 2%;
   padding: 1% 0; }
   .container-fluid .logo:hover {
     transform: scale(1.1);
@@ -57,6 +60,13 @@
       color: #f7f7f7;
       transition: backgraound-color .7s ease-out;
       outline: 0; }
+
+.container-fluid .navbar-toggler {
+  margin-right: 2%;
+  color: #d8d1a1; }
+
+.container-fluid .navbar-toggler-icon {
+  color: #dbca5d; }
 
 #footer h3 {
   font-size: 1.2rem;
@@ -84,3 +94,125 @@
 @media (min-width: 1024px) {
   #footer h3 {
     margin-top: 3%; } }
+
+.d-block {
+  height: 20vh;
+  object-fit: cover; }
+
+@media (min-width: 768px) {
+  .d-block {
+    height: 30vh;
+    object-fit: cover; } }
+
+@media (min-width: 1024px) {
+  .d-block {
+    height: 35vh;
+    object-fit: cover; } }
+
+#artistas h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  background-color: #020202;
+  padding: 1.5%;
+  text-transform: uppercase; }
+
+#artistas .trayect {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "figure1" "figure2"; }
+  #artistas .trayect #figure1 {
+    grid-area: figure1;
+    text-align: center; }
+    #artistas .trayect #figure1 figcaption {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-top: 3%; }
+  #artistas .trayect #figure2 {
+    grid-area: figure2;
+    text-align: center; }
+    #artistas .trayect #figure2 figcaption {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-top: 3%; }
+  #artistas .trayect .img-figure {
+    width: 70%;
+    margin-top: 5%;
+    border-radius: 3%; }
+  #artistas .trayect .format-p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin: 2% 5% 0 5%; }
+
+#musica h1 {
+  text-align: center;
+  background-color: #020202;
+  padding: 1.5%;
+  font-size: 1.8rem;
+  text-transform: uppercase; }
+
+#musica .music {
+  margin: 2% 20%;
+  padding: 3% 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  #musica .music div {
+    width: 100%;
+    padding: 10% 0;
+    margin: 3% 0;
+    background-color: #020202; }
+    #musica .music div img {
+      width: 70%; }
+  #musica .music .animat {
+    transition: all .7s ease-in-out; }
+    #musica .music .animat:hover {
+      transform: scale(1.05); }
+
+#novedades {
+  margin-top: 10%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  #novedades .format-columns {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    width: 80%;
+    margin-left: 10%; }
+    #novedades .format-columns h2 {
+      margin-top: 4%;
+      text-transform: capitalize; }
+    #novedades .format-columns div img {
+      width: 70%;
+      margin-top: 12%;
+      padding: 0;
+      border-radius: 3%; }
+  #novedades p {
+    display: none; }
+
+@media (min-width: 768px) {
+  #novedades h2 {
+    font-size: 3.2rem; }
+  #novedades p {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2.2rem; } }
+
+@media (min-width: 1024px) {
+  #novedades {
+    margin: 0%;
+    padding: 0%;
+    display: flex; }
+    #novedades .format-columns {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      width: 30%; }
+      #novedades .format-columns div {
+        justify-content: space-around; }
+        #novedades .format-columns div img {
+          width: 80%;
+          margin-top: 12%;
+          padding: 0%; } }

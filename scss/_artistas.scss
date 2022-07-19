@@ -1,0 +1,51 @@
+#artistas{
+    @mixin text ($size, $alineacion){
+        font-size: $size;
+        text-align: $alineacion;
+        background-color: $bgBlack;
+        padding: 1.5%;
+        text-transform: uppercase;
+    }
+    h1{
+        @include text (1.8rem, center)
+    }
+    .trayect{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "figure1"
+        "figure2";
+        #figure1{
+            grid-area: figure1;
+            text-align: center;
+            figcaption{
+                font-size: $textSm;
+                font-weight: $bold;
+                text-transform: capitalize;
+                margin-top: 3%;
+            }
+        }
+        #figure2{
+            grid-area: figure2;
+            text-align: center;
+            figcaption{
+                font-size: $textSm;
+                font-weight: $bold;
+                text-transform: capitalize;
+                margin-top: 3%;
+            }
+        }
+        .img-figure{
+            width: 70%;
+            margin-top: 5%;
+            border-radius: 3%;
+        }
+        .format-p{
+            font-size: $textXs;
+            line-height: $lineHeightSm;
+            margin: 2% 5% 0 5%;
+        }
+    }
+}

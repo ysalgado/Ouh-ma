@@ -1,10 +1,33 @@
-// variables globales
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
-//color
+// variables globales
+//fonts
+
+$font1: 'Quicksand', sans-serif;
+
+//Sizing
+$textXxs: .8rem;
+$textXs: 1.2rem;
+$textSm: 1.8rem;
+$textMd: 2.2rem;
+$textLg: 3.2rem;
+$textXl: 4.2rem;
+
+//lineHeight
+$lineHeightXs: 1.2rem;
+$lineHeightSm: 2.2rem;
+$lineHeightMd: 2.8rem;
+
+//weigth
+$ligth: 300;
+$regular: 400;
+$bold: 600;
+
+//paleta de color
 $bgGeneral: #141414;
-$bgBlcolor: #030303; 
+$bgBlack: #020202; 
 $color1: #d8d1a1;
 $color2: #dbca5d; 
 $color3: #cfc05b;
 $color4: #1b1b1b;
-$colorWhite: #f7f7f7; 
+$White: #f7f7f7; 

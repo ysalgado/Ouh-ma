@@ -1,0 +1,16 @@
+.d-block{
+    height: 20vh;
+    object-fit: cover;
+}
+@media (min-width: 768px){
+    .d-block{
+        height: 30vh;
+        object-fit: cover;
+    }
+}
+@media (min-width: 1024px){
+    .d-block{
+        height: 35vh;
+        object-fit: cover;
+    }
+}

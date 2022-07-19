@@ -1,7 +1,10 @@
 .container-fluid{
+    .navbar-toggler-icon{
+        background-color: url ("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28216, 209, 161,' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
     .logo{
-        width: 40%;
-        margin: 0;
+        width: 50%;
+        margin-left: 2%;
         padding: 1% 0;
             &:hover{
             transform: scale(1.1);
@@ -13,10 +16,17 @@
         .navbar-nav .nav-item .nav-link{
         color: $color1;
             &:hover{
-        color: $colorWhite;
+        color: $White;
         transition: backgraound-color .7s ease-out;
         outline: 0;
             }   
         }
+    }
+    .navbar-toggler{
+        margin-right: 2%;
+        color: $color1;
+    }
+    .navbar-toggler-icon{
+        color: $color2;
     }
 }
