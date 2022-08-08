@@ -65,7 +65,8 @@
   color: #d8d1a1; }
 
 .container-fluid .navbar-toggler-icon {
-  color: #dbca5d; }
+  color: #dbca5d;
+  font-size: 1.8rem; }
 
 #navbarSupportedContent .navbar-nav .nav-item .nav-link {
   color: #d8d1a1; }
