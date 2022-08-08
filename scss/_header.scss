@@ -1,17 +1,18 @@
-.d-block{
-    height: 20vh;
+.carousel{
+    height: 50vh;
     object-fit: cover;
+    object-position: center;
 }
 @media (min-width: 768px){
-    .d-block{
-        height: 25vh;
+    .carousel{
+        height: 60vh;
         object-fit: cover;
         object-position: center;
     }
 }
 @media (min-width: 1024px){
-    .d-block{
-        height: 35vh;
+    .carousel{
+        height: 80vh;
         object-fit: cover;
         object-position: center;
     }

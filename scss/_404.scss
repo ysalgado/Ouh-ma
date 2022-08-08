@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $color5;
+    margin-top: 20%;
+    #g-404{
+        display: flex;
+        justify-content: center;
+        margin: 5% 5% 0 5%;
+        display: grid;
+        grid-template-columns: 30% 60%;
+        grid-template-areas: 
+        "div1 div1"
+        "div2 div3"
+        "div4 div4";
+        #div1{
+            grid-area: div1;
+            text-align: center;
+            font-size: $textLg;
+            margin-top: 5%;
+            padding: 3%;
+            background-color: $color4;
+            color: $color3;
+            border-radius: 100% 100% 0 0;
+        }
+        #div2{
+            grid-area: div2;
+            .img-404{
+                width: 95%;
+                margin-top: 7%;
+                margin-left: 20%;
+                
+            }
+        }
+        #div3{
+            grid-area: div3;
+            font-size: $textMd;
+            font-weight: $ligth;
+            line-height: $lineHeightMd;
+            color: $color1;
+            padding: 3%;
+            margin: 2%;
+        }
+        #div4{
+            grid-area: div4;
+            a{
+                font-size: $textSm;
+                text-transform: capitalize;
+                background-color: $black;
+                color: $color1;
+                text-decoration: none;
+                border: none;
+                border-radius: 0 0 100% 100%;
+                width: 100%;
+                padding: .5em 0;
+                display: grid;
+                justify-content: center;
+                &:hover, 
+                &:focus{
+                    color: $color3;
+                    background-color: $color4;
+                    transition: backgraound-color .7s ease-out;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    body{
+        #g-404{
+            #div1{
+                h1{
+                font-size: $textXl;
+                }
+            }
+            #div3{
+                display: flex;
+                p{
+                    justify-content: center;
+                    text-align: center;
+                    margin-top: 10%;
+                    font-size: $textLg;
+                    line-height: $lineHeightLg;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    body{
+        margin-top: 0;
+        #g-404{
+            #div3{
+                p{
+                    margin-top: 18%;
+                }
+            }
+        }
+    }
+    
+}

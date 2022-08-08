@@ -15,35 +15,43 @@
     line-height: $lineHeightSm;
     text-align: center;
     color: $color1;
-    height: 40vh;
+    height: 33vh;
     h1{
         font-size: $textSm;
         text-align: center;
-        margin-top: 5%;
+        margin: 8% 3% 0 3%;
     }
     p{
-        margin: 5% 15% 0 15%;
+        margin: 5% 5% 0 5%;
+        font-size: $textXs;
     }
 }
 @media (min-width: 768px){
     #main{
-        font-size: $textLg;
         height: 22vh;
+        h1{
+            font-size: $textLg;
+            margin-top: 3%;
+        }
         section p{
             margin-top: 3%;
+            font-size: $textMd;
+            line-height: $lineHeightMd;
+            font-weight: $ligth;
         }
     }
 }
 @media (min-width: 1024px){
     #main{
-        font-size: $textXl;
-        line-height: $lineHeightMd;
+        
         h1{
-            font-size: $textMd;
+            font-size: $textLg;
             margin-top: 3%;
         }
         section p{
             margin: 2% 15% 0 15%;
+            font-size: $textLg;
+            line-height: $lineHeightLg;
         }
     }
 }

@@ -3,7 +3,7 @@
         background-color: url ("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28216, 209, 161,' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     .logo{
-        width: 50%;
+        width: 68%;
         margin-left: 2%;
         padding: 1% 0;
             &:hover{
@@ -13,15 +13,8 @@
         }
     .navbar-brand{
         width: 70%;
-        .navbar-nav .nav-item .nav-link{
-        color: $color1;
-            &:hover{
-        color: $White;
-        transition: backgraound-color .7s ease-out;
-        outline: 0;
-            }   
-        }
     }
+    
     .navbar-toggler{
         margin-right: 2%;
         color: $color1;
@@ -29,4 +22,46 @@
     .navbar-toggler-icon{
         color: $color2;
     }
+}
+#navbarSupportedContent{
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: $color1;
+                &:hover{
+                    color: $color3;
+                    transition: backgraound-color .7s ease-out;
+                    outline: 0;
+            }
+        }
+    }
+}
+}
+@media (min-width: 768px){
+    .container-fluid{
+        .logo{
+            width: 50%;
+        }
+        .navbar-toggler-icon{
+            font-size: $textMd;    
+        }
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .container-fluid{
+        .logo{
+            width: 40%;
+        }
+    }
+    #navbarSupportedContent{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    font-size: $textMd;
+            }
+        }
+    }
+}
 }

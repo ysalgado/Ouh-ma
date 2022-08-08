@@ -1,6 +1,24 @@
+.i-h-c{
+    margin: 0;
+    padding: 0;
+    width: 80%; 
+    position: absolute;
+    margin-left: 15%;
+    top: -2%;
+    z-index: -2;
+}
 #contacto{
+    h1{
+        font-size: $textSm;
+        font-weight: bold;
+        color: $color3;
+        margin-top: -4%;
+        margin-bottom: 20%;
+        padding: 1.5%;
+        text-transform: uppercase;
+    }
     box-sizing: border-box;
-    margin: 5% 15%;
+    margin: 35% 15%;
     padding: 2%;
     .box{
         box-shadow: 0 0 20px 0 $color1;
@@ -13,7 +31,6 @@
         form{
             font-size: $textSm;
             text-transform: capitalize;
-            height: 50%;
         }
     }
     .contact-form{
@@ -51,12 +68,13 @@
             }
             display: grid;
             grid-template-columns: 1fr 1fr;
-            column-gap: 20%;
+            column-gap: 10%;
             grid-template-areas: 
             "name last-name"
             "phone email"
             "mensaje mensaje"
-            "button button";
+            "button button"
+            "brand brand";
         }
         #name{
             grid-area: name;
@@ -76,29 +94,93 @@
         #button{
             grid-area: button;
         }
+        
     }
     .contact-info{
-        background-color: black;
         width: auto; 
         text-align: center;
         font-size: $textXxs;
-        margin: 2%;
+        margin: 1%;
+        padding: 1%;
         display: none;
         ul{
             list-style: none;
         }
     }
+    #brand p{
+        background-color: $black;
+        font-size: $textXs;
+        font-weight: $ligth;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
 }
 @media (min-width: 768px){
-    .content{
-        form{
+    .i-h-c{
+        width: 60%; 
+        margin-left: 21%;
+        top: -2%;
+        z-index: -2;
+    }
+    #contacto{
+        h1{
             font-size: $textMd;
+            text-align: center;
+            margin-top: -15%;
+        }
+        .contact-form form{
+            font-size: $textLg;
             height: 60%;
+            #button{
+                font-size: $textXs;
+            }
+        }
+        .contact-info{
+            display: block;
+            font-size: $textMd;
+            .fa-solid{
+                font-size: $textXs;
+                font-weight: $ligth;
+                line-height: $lineHeightSm;
+                text-align: center;
+                text-transform: capitalize;
+                margin-right: 1em;
+            }
+        }
+    #brand p{
+        font-size: $textMd;
+    }
+    }
+    
+}
+@media (min-width: 1024px){
+    #box{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    #contacto{
+        .contact-form{
+            padding: 2rem;
+            form{
+                font-size: $textXl;
+                input,
+                textarea{
+                    font-size: $textSm;
+                    color: $White;
+                }
+            }
+        }
+        .contact-info{
+            font-size: $textLg;
+            font-weight: $ligth;
+            line-height: $lineHeightMd;
+            .fa-solid{
+                margin-right: 1em;
+            }
+        }
+        #brand{
+            font-size: $textMd;
         }
     }
-    .contact-info{
-        display: block;
-    }
-
 }
-@media (min-width: 1024px)

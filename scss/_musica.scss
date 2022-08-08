@@ -1,31 +1,97 @@
+.i-h-m{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    position: absolute;
+    right: 3%;
+    top: 9%;
+    z-index: -2;
+}
+
 #musica{
+    margin: 10%;
     h1{
-        text-align: center;
-        background-color: $bgBlack;
-        padding: 1.5%;
         font-size: $textSm;
-        text-transform: uppercase; 
-    }
-    .music{
-        margin: 2% 20%;
-        padding: 3% 0;
-        display: flex;
-        flex-direction: column;
+        font-weight: bold;
+        color: $color3;
         text-align: center;
-        div{
-            width: 100%;
-            padding: 10% 0;
-            margin: 3% 0;
-            background-color: $bgBlack;
-            img{
-                width: 70%;
+        margin-top: 20%;
+        margin-bottom: 25%;
+        padding: 1.5%;
+        text-transform: uppercase;
+    }
+    
+    .card{
+        text-align: center;
+        background-color: $color5;
+        color: $color3;
+        font-weight: bold;
+        .card-body{
+            h3{
+                font-size: $textMd;
             }
         }
-        .animat{
-            transition: all .7s ease-in-out;
-            &:hover{
-                transform: scale(1.05);
+        .card-text{
+            color: $color1;
+            font-size: $textXs;
+        }
+        .btn-color{
+            border: none;
+            color: $color1;
+            font-size: $textSm;
+            text-transform: capitalize;
+            &:hover, 
+            &:focus{
+                background-color: $color4;
+                color: $color3;
+                transition: backgraound-color .7s ease-out;
             }
+            
         }
     }
 }
+@media (min-width: 768px){
+    .i-h-m{
+        width: 25%; 
+        right: 23%;
+        top: 25%;
+        }
+    #musica{
+        h1{
+            font-size: $textMd;
+        }
+        }
+        .card{
+            .card-body{
+                .card-text {
+                    color: $color1;
+                    font-size: $textXs;
+                    line-height: $lineHeightSm;
+                    font-weight: $ligth;
+                    
+                }
+            }
+        }    
+    }
+
+@media (min-width: 1024px){
+    .i-h-m{
+        right: 19%;
+        top: 30%;
+        }
+    #musica{
+        margin: 3%;
+        h1{
+            font-size: $textLg;
+            margin-bottom: 10%;
+        }
+        .flex{
+            display: flex;
+            .card{
+                justify-content:space-between;
+            }
+        }
+        
+    }
+}
+

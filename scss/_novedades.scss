@@ -1,23 +1,49 @@
-#novedades{
-    margin-top: 10%;
-    padding: 0%;
-    display: flex;
-    flex-direction: column;
+.i-h-n{
+    margin: 0;
+    padding: 0;
+    width: 100%; 
     text-align: center;
-    .format-columns{
-        font-size: 3.5rem;
-        line-height: 3rem; 
-        width: 80%;
-        margin-left: 10%;
-        h2{
-            margin-top: 4%;
-            text-transform: capitalize;
+    position: absolute;
+    top: -7%;
+    z-index: -2;
+    }
+#novedades{
+    margin: 10%;
+    h1{
+        font-size: $textSm;
+        font-weight: bold;
+        color: $color3;
+        text-align: center;
+        margin-top: -35%;
+        margin-bottom: 20%;
+        padding: 1.5%;
+        text-transform: uppercase;
+    }
+    margin-top: 60%;
+    .card{
+        text-align: center;
+        background-color: $color5;
+        color: $color1;
+        font-weight: bold;
+        margin-top: 9%;
+        .card-body{
+            a{
+                font-size: $textSm;
+                text-transform: capitalize;
+                background-color: $color5;
+                color: $color1;
+                border: none;
+                &:hover, 
+                &:focus{
+                    color: $color3;
+                    background-color: $color4;
+                    transition: backgraound-color .7s ease-out;
+                }
+            }
         }
-        div img{
-            width: 70%;
-            margin-top: 12%;
-            padding: 0;
-            border-radius: 3%;
+        .card-text{
+            color: $bgBlack;
+            font-size: $textXs;
         }
     }
     p{
@@ -25,32 +51,68 @@
     }
 }
 @media (min-width: 768px){
+    .i-h-n{
+        width: 75%; 
+        left: 13%;
+        }
     #novedades{
-        h2{
-            font-size: $textLg;
+        h1{
+            font-size: $textMd;
         }
-        p{
-            display: block;
-            font-size: $textSm;
-            line-height: $lineHeightSm;
-        }
+        .card{
+            margin: 10%;
+            .card-body{
+                a{
+                    font-size: $textMd;
+                    font-weight: bold;
+                }
+                .card-text {
+                    display: block;
+                    color: $color1;
+                    font-size: $textMd;
+                    line-height: $lineHeightMd;
+                    font-weight: $ligth;
+                    
+                }
+            }
+        }    
     }
 }
 @media (min-width: 1024px){
+    .i-h-n{
+        width: 55%; 
+        left: 23%;
+        top: -10%;
+        
+        }
     #novedades{
-        margin: 0%;
+        h1{
+            font-size: $textLg;
+            margin-top: -55%;
+        }
+        #grid{
+        margin: 1% 1% 0 1%;
         padding: 0% ;
-        display: flex;
-        .format-columns{
-            font-size: $textMd;
-            line-height: $lineHeightMd; 
-            width: 30%;
-            div{
-                justify-content: space-around;
-                img{
-                width: 80%;
-                margin-top: 12%;
-                padding: 0%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3%;
+        grid-template-areas: 
+        "card1 card2 card3";
+            #card1{
+                grid-area: card1;
+            }
+            #card2{
+                grid-area: card2;
+            }
+            #card3{
+                grid-area: card3;
+            }
+        }
+        .card{
+            margin: 8%;
+            .card-body{
+                .card-text{
+                    font-size: $textSm;
                 }
             }
         }
